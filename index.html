@@ -7,7 +7,7 @@
 		<title>presentation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -50,6 +50,10 @@
 					<h1>hello</h1>
 					<p>This is a slide with a <code>h1</code> and a <code>p</code>.</p>
 				</section>
+				<section>
+					<section> Vertical 1</section>
+					<section> Vertical 2</section>
+				</section>
 			</div>
 		</div>
 
@@ -83,6 +87,15 @@
 			socket.on('previous', function() {
 				//Call reveal API
 				Reveal.prev();
+			});
+
+			socket.on('up', function() {
+				//Call reveal API
+				Reveal.up();
+			});
+			socket.on('down', function() {
+				//Call reveal API
+				Reveal.down();
 			});
 		</script>
 	</body>

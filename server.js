@@ -23,11 +23,17 @@ const io = socketIO.listen(server);
 io.on('connection', function(socket) {
 	console.log("Client connected");
 	socket.on('next', function(){
-		//console.log('next');
+		console.log('next');
 		io.emit('next');
 	});
 	socket.on('previous', function(){
 		io.emit('previous');
+	});
+	socket.on('up', function(){
+		io.emit('up');
+	});
+	socket.on('down', function(){
+		io.emit('down');
 	});
 	socket.on('disconnect', function(){
 		console.log("Client disconnected");
