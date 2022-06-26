@@ -23,7 +23,6 @@ const io = socketIO.listen(server);
 io.on('connection', function(socket) {
 	console.log("Client connected");
 	socket.on('next', function(){
-		console.log('next');
 		io.emit('next');
 	});
 	socket.on('previous', function(){

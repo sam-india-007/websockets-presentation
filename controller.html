@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css/controller.css" />
+		<link rel="stylesheet" href="controller.css">
 		<script src="js/intercom.js"> </script>
 		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
 
@@ -27,11 +28,17 @@
 
 	</head>
 	<body>
+		<h1>
+			<center>This is the page for controlling presentation remotely</center>
+		</h1>
+		<h3><center>Here are the buttons for navigation the presentation</center></h3>
 		<div class="outer">
-			<div class="inner">
-	      <button id="prevButton" onclick="previous()">Previous</button>
+			<div class="div1">
+			<button id="prevButton" onclick="previous()">Previous</button>
 	      <button id="nextButton" onclick="next()">Next</button>
-		  <button id="upButton" onclick="up()">up</button>
+			</div>
+			<div class="div2">
+				<button id="upButton" onclick="up()">up</button>
 		  <button id="downButton" onclick="down()">down</button>
 			</div>
     </div>
