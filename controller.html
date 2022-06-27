@@ -24,10 +24,13 @@
 			var down = function(){
 				socket.emit('down');
 			};
+			var firstslide = function(){
+				socket.emit('firstslide');
+			};
 		</script>
 
 	</head>
-	<body>
+	<body style="background-color: #F9CCCA;">
 		<h1>
 			<center>This is the page for controlling presentation remotely</center>
 		</h1>
@@ -40,7 +43,10 @@
 			<div class="div2">
 				<button id="upButton" onclick="up()">up</button>
 		  <button id="downButton" onclick="down()">down</button>
+		  <div class="div3">
+			<button id="fsButton" onclick="firstslide()">back to first slide </button>
 			</div>
+			<script src="app.js"></script>
     </div>
 	</body>
 </html>

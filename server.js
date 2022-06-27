@@ -34,10 +34,14 @@ io.on('connection', function(socket) {
 	socket.on('down', function(){
 		io.emit('down');
 	});
+	socket.on('firstslide', function(){
+		io.emit('firstslide');
+	});
 	socket.on('disconnect', function(){
 		console.log("Client disconnected");
 	});
 });
+
 
 /********************************************************************
 ************* EXPRESS REDIRECTS
