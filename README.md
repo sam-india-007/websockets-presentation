@@ -2,7 +2,7 @@
 
 This is the skeleton of a presentation using reveal.js and socket.io, allowing you to use your web browser to give a presentation controlled from any other device (smartphone).
 
-See the demo for reveal.js [here](http://lab.hakim.se/reveal-js/#/) and the github repo [here](https://github.com/hakimel/reveal.js/).
+See the demo for reveal [here](http://lab.hakim.se/reveal-js/#/) and the github repo [here](https://github.com/hakimel/reveal.js/).
 
 ## initialization
 Do ```npm install``` then ```npm start```.

@@ -1,14 +1,14 @@
 {
-  "name": "present",
+  "name": "presentation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Midori Sinha",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "bufferutil": "1.2.1",
