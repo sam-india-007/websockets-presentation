@@ -20,7 +20,11 @@
     "utf-8-validate": "1.2.1",
     "ws": "1.1.1"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "devDependencies": {
     "nodemon": "^2.0.16"
   }
+  
 }
